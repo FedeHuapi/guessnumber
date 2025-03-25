@@ -1,0 +1,64 @@
+body {
+    background-color: #d4edda;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px  rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 200%;
+    color: #333;
+    
+}
+
+input {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+}
+
+#guess {
+    margin-right: 5px;
+}
+
+.container h1,
+.container p,
+.container input,
+.container button {
+
+    margin-bottom: 20px;
+}
+
+#guess:disabled {
+    background-color: #66b0ff;
+    cursor: not-allowed;
+}
