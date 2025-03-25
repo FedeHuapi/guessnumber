@@ -1,7 +1,6 @@
 body {
     background-color: #d4edda;
     overflow: hidden;
-
 }
 
 .game-wrapper {
@@ -19,6 +18,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    font-family: "Oswald", sans-serif;
 }
 
 h1 {
@@ -84,6 +84,6 @@ input:focus {
     color: #666; 
     font-size: 14px;
     font-family: "Arial", sans-serif;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     font-weight: 300;
 }
