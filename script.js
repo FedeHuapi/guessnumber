@@ -11,7 +11,7 @@ const resetBtn = document.getElementById("reset")
 let intentos = 0;
 let juegoTerminado = false;
 
-guessBtn.addEventListener("click", function () {
+function adivinarNumero () {
     let adivinanza = parseInt(input.value);
     
     
@@ -40,7 +40,19 @@ guessBtn.addEventListener("click", function () {
 
     console.log(adivinanza);
     
+};
+
+guessBtn.addEventListener("click", adivinarNumero)
+
+// Enter
+input.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault(); 
+        adivinarNumero(); 
+    }
 });
+
+
 
 resetBtn.addEventListener("click", function(){
     juegoTerminado = false;
